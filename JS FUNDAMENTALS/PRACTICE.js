@@ -1,6 +1,8 @@
 //JS IN PRACTICE
 
+
 //VARIABLES
+
 // Declare two variables: admin and name. Assign the value "John" to name. Cope the value from name to admin. Show the value of admin using alert.
 
 let admin = name;
@@ -12,7 +14,9 @@ alert(admin);
 let ourPlantName = "Earth"
 let currentVistorName = "Pablo"
 
+
 //CONDITIONALS IF ? BRANCHING
+
 //Using the if.else construct, write code which asks 'What is the official name of JavaScropt? If visitor enters ECMAScript output right otherwise you dont know emcascript.
 
 let value = "What is the official name of JavaScript?"; 
@@ -47,6 +51,7 @@ let message = (login == 'Employee') ? 'Hello' : (login == 'Director') ? 'Greetin
 
 
 //LOGICAL OPERATORS
+
 // What is the code below going to output?
 alert ( null || 2 || undefined )
 // 2 because it's the first truthy value
@@ -121,3 +126,43 @@ if (userName === 'Admin'){
 }else{
     alert("I don't know you.")
 }
+
+
+//FUNCTIONS
+
+//The following function returns true if age is greater than 18. Rewrite it to perform the same, without if, in a single line in two variations: using ? and using || OR.
+function checkAge (age){
+    if (age > 18){
+        return true;
+    }else{
+        return confirm('Did your parents allow you?')
+    }
+}
+//Using ?
+function checkAge (age){
+    return (age > 18) ? true : confirm('Did your parents allow you?');
+}
+//Using ||OR
+function checkAge (age){
+    return (age > 18) || confirm('Did your parents allow you?');
+}
+
+//Write a function min(a,b) which returns the least of two numbers a and b.
+//using conditionals
+function min(a,b){
+    if (a < b){
+        return a
+    }else{
+        return b
+    }
+}
+//using ?
+function min (a,b){
+    (a < b) ? a : b;
+}
+
+//Write a function pow(x,n) that returns x in power n. In other words multiplies itself n times and returns result.
+function pow(x,n){
+    returns (x**n)
+}
+//come back to this one
