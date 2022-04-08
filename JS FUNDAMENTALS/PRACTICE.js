@@ -166,3 +166,31 @@ function pow(x,n){
     returns (x**n)
 }
 //come back to this one
+
+
+//FUNCTION EXPRESSIONS
+
+
+//ARROW FUNCTIONS
+//Replace Function Expressions with arrow functions in the code below:
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+}
+ask(
+    "Do you agree?",
+    function() { alert("You agreed."); },
+    function() { alert("You canceled the execution."); }
+);
+
+//arrow functions below
+function ask(question, yes, no){
+    if (confirm(question)) yes();
+    else no();
+}
+ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution.")
+)
+//so we remove the function call, leave the parentheses and curly brackets. 
