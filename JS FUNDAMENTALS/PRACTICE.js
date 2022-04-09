@@ -165,6 +165,24 @@ function min (a,b){
 function pow(x,n){
     returns (x**n)
 }
+
+function pow(x, n){
+    let result = x
+    for (let i = 1; i < n; i++){
+        result *= x
+    }
+    return result
+}
+let x = prompt("x?", '')
+let n = prompt("n?", '')
+if (n< 1){
+    alert(`Power ${n} is not supported, use a positive interger`)
+}else{
+    alert( pow(x, n))
+}
+
+
+
 //come back to this one
 
 
@@ -194,5 +212,3 @@ ask(
     () => alert("You canceled the execution.")
 )
 //so we remove the function call, leave the parentheses and curly brackets. 
-
-//LOGICAL FUNTIONS
