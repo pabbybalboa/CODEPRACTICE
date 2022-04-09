@@ -194,3 +194,5 @@ ask(
     () => alert("You canceled the execution.")
 )
 //so we remove the function call, leave the parentheses and curly brackets. 
+
+//LOGICAL FUNTIONS
