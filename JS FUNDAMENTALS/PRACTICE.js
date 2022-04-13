@@ -212,3 +212,47 @@ ask(
     () => alert("You canceled the execution.")
 )
 //so we remove the function call, leave the parentheses and curly brackets. 
+
+//LOOPS
+//What is the last value alerted of this code and why?
+let i = 3
+while(i){
+    alert( i-- )
+}
+//1. While loops run until the first falsey value hits which would be 0. 
+
+//For every loop iteration, writte down which value it outputs and then compare it with the solution.
+//Both loops alert the same values or not?
+let i = 0
+while ( ++i < 5 ) alert(i)
+
+let i = 0
+while (i++ < 5) alert(i)
+
+//1 to 4 then 1 to 5. Since the first has a prefix, it increments first. The next one would get to five but is false so wouldnt alert.
+
+//For each loop write down which value it is going to show, then compare. Alerts same values or not?
+for (let i = 0; i < 5; i++) alert(i)
+for (let i = 0; i < 5; ++i) alert(i)
+
+//Executes i = 0. Checks condition, if true executes the loop body then i++ or ++i. The incrememtn is seperated from condition check. Value returned by the increment is not used here.
+
+//Use the for loop to output even numbers from 2 to 10.
+for (let i = 2; i <= 10; i++){
+    if(i % 2 == 0){
+        alert(i)
+    }
+}
+//Starts at 2. The if statment makes sure to get the remainder and check for evenness.
+
+//Rewrite the code changing the for loop to a while without altering its behavior(output stays the same).
+for(let i = 0; i < 3; i++){
+    alert(`number ${i}`)
+}
+
+let i = 0
+while(i < 3){
+    alert(`number ${i}`)
+    i++;
+}
+
