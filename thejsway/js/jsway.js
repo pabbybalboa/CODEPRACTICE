@@ -55,3 +55,49 @@ console.log(number2)
 
 
 //Add conditions
+let dayOfWeek = prompt("What day is it?")
+if (dayOfWeek == "Monday"){
+    alert ("Tomorrow is Tuesday")
+}else if(dayOfWeek == "Tuesday"){
+    alert ("Tomorrow is Wednesday")
+}else if(dayOfWeek == "Wednesday"){
+    alert ("Tomorrow is Thursday")
+}else if(dayOfWeek == "Thursday"){
+    alert ("Tomorrow is Friday")
+}else if(dayOfWeek == "Friday"){
+    alert ("Tomorrow is Saturday")
+}else if(dayOfWeek == "Saturday"){
+    alert ("Tomorrow is Sunday")
+}else if(dayOfWeek == "Sunday"){
+    alert ("Tomorrow is Monday")
+}else{
+    alert ("That's not a real day")
+}
+//does not account for spelling errors
+
+//Write a program that accepts two numbers, then compares their values and displays an appropriate message in all cases.
+let firstNumber = prompt("Pick a number.")
+let secondNumber = prompt("Pick a second number.")
+firstNumber = Number(firstNumber)
+secondNumber = Number(secondNumber)
+if(firstNumber > secondNumber){
+    alert( `${firstNumber} is greater than ${secondNumber}`)
+}else if(firstNumber < secondNumber){
+    alert(  `${secondNumber} is greater than ${firstNumber}`)
+}else if(firstNumber == secondNumber){
+    alert("Both numbers are equal")
+}else{
+    alert("Need valid inputs.")
+}
+
+//Write a program that accepts a month number and then shows the number of days in that month. 
+let monthNumber = Number(prompt("What is the number of the month you're looking for?"))
+if(monthNumber == 1 || monthNumber == 3 || monthNumber == 5 || monthNumber == 7 || monthNumber == 8 || monthNumber == 10 || monthNumber == 12 ){
+    alert("There are 31 days in that month.")
+}else if(monthNumber == 4 || monthNumber == 6 || monthNumber == 9 || monthNumber == 11 ){
+    alert("There are 30 days in that month.")
+}else if(monthNumber == 2 ){
+    alert("There are 28 days in that month.")
+}else{
+    alert("Need a valid month number.")
+}
