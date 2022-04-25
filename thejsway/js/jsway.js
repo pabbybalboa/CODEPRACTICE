@@ -101,3 +101,37 @@ if(monthNumber == 1 || monthNumber == 3 || monthNumber == 5 || monthNumber == 7 
 }else{
     alert("Need a valid month number.")
 }
+
+//Repeat Statements.
+//Write a program that launches a carousel for 10 turns showing the turn number each time. Improve it so that the number of turns is given by the user.
+
+for(let i = 0; i <= 10; i++){
+    console.log(i)
+}
+
+let carouselTurns = Number(prompt("How many times will the carousel turn?"))
+for(let i = 0; i <= carouselTurns; i++){
+    console.log(i)
+}
+
+//Make a program that only shows odd numbers between 1 and 10.
+for(let i = 1; i <=10; i++){
+    if(!(i % 2 === 0)){
+        console.log(`${i} is odd.`)
+    }
+}
+
+let checkEvenOrOdd = Number(prompt("Pick a number between 1 and 10."))
+for(let i = checkEvenOrOdd; i <= (checkEvenOrOdd + 10); i++){
+    if(i % 2 === 0){
+        console.log(`${checkEvenOrOdd} is even!`)
+    }else if(!(i % 2 === 0 )){
+        console.log(`${checkEvenOrOdd} is odd!`)
+    }
+}
+
+//Write a program that continues to ask the user for the number until the entered number is less than or equal to 100.
+let numberMustBe = Number(prompt("Pick a number, is it the right one?"))
+while(numberMustBe <= 100){
+    alert("That number works.")
+}
