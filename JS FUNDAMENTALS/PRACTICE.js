@@ -223,11 +223,11 @@ while(i){
 
 //For every loop iteration, writte down which value it outputs and then compare it with the solution.
 //Both loops alert the same values or not?
-let i = 0
-while ( ++i < 5 ) alert(i)
+let j = 0
+while ( ++j < 5 ) alert(j)
 
-let i = 0
-while (i++ < 5) alert(i)
+let k = 0
+while (k++ < 5) alert(k)
 
 //1 to 4 then 1 to 5. Since the first has a prefix, it increments first. The next one would get to five but is false so wouldnt alert.
 
@@ -250,9 +250,9 @@ for(let i = 0; i < 3; i++){
     alert(`number ${i}`)
 }
 
-let i = 0
-while(i < 3){
-    alert(`number ${i}`)
+let h = 0
+while(h < 3){
+    alert(`number ${h}`)
     i++;
 }
 
