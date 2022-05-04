@@ -30,9 +30,9 @@
       
       // Array.prototype.filter()
       // 1. Filter the list of inventors for those who were born in the 1500's
-      inventors.filter(year < 1500)
-
-
+      let inventorsFilter = inventors.filter(inventor => inventor.population > 1500)
+      console.log(inventorsFilter)
+      
       // Array.prototype.map()
       // 2. Give us an array of the inventors first and last names
   
