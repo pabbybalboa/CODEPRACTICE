@@ -52,18 +52,28 @@
       let totalYears = inventors.reduce((total,inventor) => {
         return total + (inventor.passed - inventor.year)
       },0)
-      console.log(totalYears)
-      
-
+      console.log(totalYears) 
   
       // 5. Sort the inventors by years lived
+      let inventorAgeArr = inventors.sort(function(a,b){
+        let lastInventor = a.passed - a.year
+        let nextInventor = b.passed - b.year
+        return lastInventor > nextInventor ? -1 : 1
+      })
+      console.log(inventorAgeArr)
   
       // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
       // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-  
-  
+    
+      
       // 7. sort Exercise
       // Sort the people alphabetically by last name
+      let lastNameArr = people.sort(function(lastOne,nextOne){
+        let [aLast, aFirst] = lastOne.split(', ')
+        let [bLast, bFirst] = nextOne.split(', ')
+        return aLast > bLast ? 1 : -1
+      })
+      console.log(lastNameArr)
   
       // 8. Reduce Exercise
       // Sum up the instances of each of these
