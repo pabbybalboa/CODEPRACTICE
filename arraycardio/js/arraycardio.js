@@ -79,3 +79,6 @@
       // Sum up the instances of each of these
       const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
   
+
+      //ANSWERS: https://github.com/wesbos/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/index-FINISHED.html
+      
