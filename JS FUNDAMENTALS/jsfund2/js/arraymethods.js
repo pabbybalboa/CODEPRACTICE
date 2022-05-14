@@ -44,4 +44,4 @@ let mary = { name: "Mary", age: 28 };
 let users = [ john, pete, mary ];
 let names = users.map(item => item.name)
 
-//update2
+//work on this tomorrow
