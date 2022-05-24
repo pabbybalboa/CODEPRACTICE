@@ -120,3 +120,30 @@ console.log(account.describe())
 account.balance -= 80 //debit 80
 console.log(account.describe())
 
+//Understanding OOP
+
+const aurora = {
+    name: "Aurora",
+    health: 150,
+    strength: 25,
+    xp: 0,
+
+    describe(){
+        return `${this.name} has ${this.health} health points, ${this.strength} as strength and ${this.xp} XP points.`
+    }
+}
+aurora.health -= 20
+aurora.strength += 10
+aurora.xp += 15
+console.log(aurora.describe)
+
+const glacius = {
+    name: "Glacius",
+    health: 130,
+    strength: 30,
+    xp: 0,
+
+    describe(){
+        return `${this.name} has ${this.health} health points, ${this.strength} as strength and ${this.xp} XP points.`
+    }
+}
